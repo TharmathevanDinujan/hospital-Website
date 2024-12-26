@@ -1,0 +1,194 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('/images/7957.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    overflow-x: hidden;
+    height: 1400px;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #004080;
+    color: white;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.hospital-image {
+    width: 140px;
+    height: auto;
+    position: relative;
+    right: 30px;
+    bottom: 7px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    position: relative;
+    right: 300px;
+}
+
+/* Navigation Styling */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    position: relative;
+    right: 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #00bfff;
+}
+
+/* Main Content Styling */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Doctor Cards Styling */
+.doctor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.doctor-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.doctor-card:hover {
+    transform: scale(1.05);
+}
+
+.doctor-card img {
+    width: 160px; /* Set a fixed width */
+    height: 210px; /* Set a fixed height */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fills the container without distortion */
+    margin-bottom: 10px;
+}
+
+
+.doctor-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.doctor-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Popup Styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content input, .popup-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #00bfff;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #004080;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+#search-container {
+    position: relative;
+    right: 490px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#doctor-search {
+    
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #004080;
+    border-radius: 5px;
+}
+
+.search-icon {
+    position: relative;
+    top: 16px;
+    left: 10px;
+    width: 40px; /* Set appropriate size */
+    height: 40px;
+    margin-right: 10px;
+}

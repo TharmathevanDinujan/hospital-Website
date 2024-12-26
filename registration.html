@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+    <link rel="stylesheet" href="/css/registration.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="/images/logo.png" alt="Hospital Image" class="hospital-image">
+        <h1>Yarl Hospital</h1>
+    
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Patient Registration</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Patient Registration</h2>
+        <form action="submit_registration.php" method="POST" enctype="multipart/form-data">
+            <!-- Full Name -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <!-- Gender -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Mobile Number -->
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" required pattern="^\d{10}$"  title="Please enter a 10-digit mobile number">
+
+            <!-- Place -->
+            <label for="place">Place:</label>
+            <select id="place" name="place" required>
+                <option value="">Select Place</option>
+                <option value="Jaffna">Jaffna</option>
+                <option value="Vavuniya">Vavuniya</option>
+                <option value="Mullaitheevu">Mullaitheevu</option>
+                <option value="Trincomalee">Trincomalee</option>
+                <option value="Mannar">Mannar</option>
+            </select>
+
+            <!-- Medical History Document Upload -->
+            <label for="medical_history">Upload Medical History Document:</label>
+            <input type="file" id="medical_history" name="medical_history" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Yarl Hospital. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+    <link rel="stylesheet" href="css/appointment.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="/images/logo.png" alt="Hospital Image" class="hospital-image">
+        <h1>Yarl Hospital</h1>
+    
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Patient Registration</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+             
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Appointment Section -->
+    <main>
+        <h2>Book an Appointment</h2>
+
+        <div id="search-container">
+            <img src="/images/serach icon.png" alt="Search Icon" class="search-icon">
+            <input type="text" id="doctor-search" placeholder="Enter doctor's name or specialty">
+        </div>
+        
+        <div class="doctor-cards">
+            <!-- Doctor 1 -->
+            <div class="doctor-card" onclick="openPopup('Dr. Vijay', 'Cardiologist', '9 AM - 5 PM')">
+                <img src="/images/doctor1.jpg" alt="Doctor Image">
+                <h3>Dr. Vijay</h3>
+                <p>Cardiologist</p>
+                <p>Availability: 9 AM - 5 PM</p>
+            </div>
+            <!-- Repeat for other doctors -->
+            <div class="doctor-card" onclick="openPopup('Dr. Nilanthan', 'Pediatrician', '10 AM - 4 PM')">
+                <img src="/images/doctor2.jpg" alt="Doctor Image">
+                <h3>Dr. Nilanthan</h3>
+                <p>Pediatrician</p>
+                <p>Availability: 10 AM - 4 PM</p>
+            </div>
+
+            <div class="doctor-card" onclick="openPopup('Dr. Mamitha paiju', 'General Practitioner', '12 PM - 6 PM')">
+                <img src="/images/doctor3.png" alt="Doctor Image">
+                <h3>Dr. Mamitha paiju</h3>
+                <p>General Practitioner</p>
+                <p>Availability: 12 PM - 6 PM</p>
+            </div>
+
+            <div class="doctor-card" onclick="openPopup('Dr. Dinujan', 'Dermatologist', '6 AM - 10 AM')">
+                <img src="/images/doctor4.JPG" alt="Doctor Image">
+                <h3>Dr. Dinujan</h3>
+                <p>Dermatologist</p>
+                <p>Availability: 6 AM - 10 AM</p>
+            </div>
+
+            <div class="doctor-card" onclick="openPopup('Dr. Sulojana', 'Gynecologist', '1 AM - 5 PM')">
+                <img src="/images/doctor5.jpg" alt="Doctor Image">
+                <h3>Dr. Sulojana</h3>
+                <p>Gynecologist</p>
+                <p>Availability: 1 AM - 5 AM</p>
+            </div>
+
+            <div class="doctor-card" onclick="openPopup('Dr. Rajini', 'Neurologist', '9 AM - 2 PM')">
+                <img src="/images/doctor6.jpg" alt="Doctor Image">
+                <h3>Dr. Rajini</h3>
+                <p>Neurologist</p>
+                <p>Availability: 9 AM - 2 PM</p>
+            </div>
+
+            <div class="doctor-card" onclick="openPopup('Dr. Sanjeevan', 'Psychiatrist', '3 PM - 7 PM')">
+                <img src="/images/doctor7.jpg" alt="Doctor Image">
+                <h3>Dr. Sanjeevan</h3>
+                <p>Psychiatrist</p>
+                <p>Availability: 3 PM - 7 PM</p>
+            </div>
+
+            <div class="doctor-card" onclick="openPopup('Dr. Surya', 'Endocrinologist', '2 AM - 6 PM')">
+                <img src="/images/doctor8.jpg" alt="Doctor Image">
+                <h3>Dr. Surya</h3>
+                <p>Endocrinologist</p>
+                <p>Availability: 2 AM - 6 PM</p>
+            </div>
+
+            <div class="doctor-card" onclick="openPopup('Dr. Sulojan', 'Radiologist', '8 AM - 1 PM')">
+                <img src="/images/doctor9.jpg" alt="Doctor Image">
+                <h3>Dr. Sulojan</h3>
+                <p>Radiologist</p>
+                <p>Availability: 8 AM - 1 PM</p>
+            </div>
+
+            <div class="doctor-card" onclick="openPopup('Dr. Niththila', 'Surgeon', '1 PM - 5 PM')">
+                <img src="/images/doctor10.jpg" alt="Doctor Image">
+                <h3>Dr. Niththila</h3>
+                <p>Surgeon</p>
+                <p>Availability: 1 PM - 5 PM</p>
+            </div>
+            <!-- Add similar blocks for other doctors (3 to 10) -->
+        </div>
+    </main>
+
+    <!-- Popup Section -->
+    <div class="popup" id="appointment-popup">
+        <div class="popup-content">
+            <h2>Book an Appointment</h2>
+            <form id="appointment-form">
+                <label for="appointment-date">Select Date:</label>
+                <input type="date" id="appointment-date" required><br>
+                <label for="appointment-time">Select Time:</label>
+                <input type="time" id="appointment-time" required><br>
+                <label for="patient-note">Patient Note:</label>
+                <textarea id="patient-note" rows="4" placeholder="Enter any additional notes here..." required></textarea><br>
+                <button type="submit">Book Appointment</button>
+                <button type="button" onclick="closePopup()">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Yarl Hospital. All rights reserved.</p>
+    </footer>
+
+    <script src="/javascript/appointment.js"></script>
+</body>
+</html>
